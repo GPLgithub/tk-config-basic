@@ -1,4 +1,4 @@
-# Copyright (c) 2016 Shotgun Software Inc.
+# Copyright (c) 2020 Autodesk, Inc.
 #
 # CONFIDENTIAL AND PROPRIETARY
 #
@@ -6,7 +6,7 @@
 # Source Code License included in this distribution package. See LICENSE.
 # By accessing, using, copying or modifying this work you indicate your
 # agreement to the Shotgun Pipeline Toolkit Source Code License. All rights
-# not expressly granted therein are reserved by Shotgun Software Inc.
+# not expressly granted therein are reserved by Autodesk, Inc.
 #
 
 # this configuration defines the behavior of the Sketchbook Integration when it
@@ -24,8 +24,14 @@ sketchbook.site:
 
     tk-multi-loader2:
       action_mappings:
-        Image: [import]
-        Photoshop Image: [import]
+        Image: [add_image]
+        Photoshop Image: [add_image]
+        Rendered Image: [add_image]
+        Texture: [add_image]
+        Tif File: [add_image]
+        Bmp File: [add_image]
+        Gif File: [add_image]
+        Skba File: [open_file]
       actions_hook: "{engine}/tk-multi-loader2/basic/scene_actions.py"
       entities:
       - caption: Project
