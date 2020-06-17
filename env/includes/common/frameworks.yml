@@ -30,9 +30,9 @@ frameworks:
   tk-framework-shotgunutils_v5.x.x:
     location:
       type: git_branch
-      branch: dev/geffrak/serialized-user
+      branch: SG-16456
       path: https://github.com/shotgunsoftware/tk-framework-shotgunutils.git
-      version: 137d88c
+      version: b4fc70c
   tk-framework-adminui_v0.x.x:
     location:
       version: v0.5.2
